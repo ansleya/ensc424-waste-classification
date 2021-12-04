@@ -13,7 +13,7 @@ random.seed = time.time()
 
 
 #modelpathload = "C:/Users/Diego Flores/OneDrive - sfuca0/SFU/Fall 2021/ENSC 424/Project/model/"
-modelpathload = "C:/Users/Diego Flores/OneDrive - sfuca0/SFU/Fall 2021/ENSC 424/Project/model (best) flower/"
+modelpathload = "C:/Users/Diego Flores/OneDrive - sfuca0/SFU/Fall 2021/ENSC 424/Project/model (best) Custom/"
 # modelpathload = "C:/Users/Diego Flores/OneDrive - sfuca0/SFU/Fall 2021/ENSC 424/Project/model (best) AlexNet/"
 
 test_base = "C:/Users/Diego Flores/Pictures/ENSC 424 Waste Classification separated/Testing/"
@@ -43,6 +43,7 @@ test_ds = image_dataset_from_directory(
 )
 
 class_names = test_ds.class_names
+print(class_names)
 num_classes = len(class_names)
 
 
@@ -74,8 +75,6 @@ for i in range(0, num_classes):
 
             imagearray.append(Image.open(input_dir + "/" + random_file))
             imagePrediction.append(class_names[np.argmax(score)])
-
-            randImgFlg = random.randrange(1, 15, 1)
             randImgCount = 0
             pictureflag += 1
 
@@ -104,7 +103,7 @@ for i in range(num_classes):
     # create fake subplot just to title set of subplots
     fake = fig.add_subplot(grid[i])
     # '\n' is important
-    fake.set_title(f'{class_names[i]}:\n', fontweight='semibold', size=14)
+    # fake.set_title(f'{class_names[i]}:\n', fontweight='semibold', size=14)
     fake.set_axis_off()
 
     gs = gridspec.GridSpecFromSubplotSpec(
