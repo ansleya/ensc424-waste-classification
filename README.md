@@ -1,6 +1,7 @@
 # ensc424-waste-classification
 
 Here is the completed ENSC 424 image classification project
+
 Ansley | Diego | Ray
 
 ## ENSC 424 Waste Classification Project - Group 6
