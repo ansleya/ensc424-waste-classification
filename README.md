@@ -22,7 +22,7 @@ This is a quick way to partition the data files into the coreesponding customiza
 
 (This Code is fully custom)
 
-### Dependancies
+### Dependencies
 
 Tensorflow -- version 2.7 (comes with keras -- 2.7)
 
