@@ -25,11 +25,19 @@ This is a quick way to partition the data files into the coreesponding customiza
 ### Dependancies
 
 Tensorflow -- version 2.7 (comes with keras -- 2.7)
+
 matplotlib
+
 openpyxl
+
 time
+
 pathlib
+
 numpy
+
 PIL
+
 random
+
 tqdm
