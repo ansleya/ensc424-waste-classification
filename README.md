@@ -15,5 +15,9 @@ References: https://www.tensorflow.org/tutorials/images/classification
 #### modelTesting.py
 This is where we test an existeing model with the testing data, finding its testing accuracy while asl generating a figure with images and the predicitons of those images with our model
 
+This Code is fully custom
+
 #### filePartition.py
 This is a quick way to partition the data files into the coreesponding customizable ratios of Training, Validation, and Testing
+
+This Code is fully custom
